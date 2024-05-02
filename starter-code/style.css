@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+}
+a, button{
+    cursor: pointer;
+}
+button:active, button:hover{
+    color: var(--Eucaplyptus, #44FFA1);
+    background-color: transparent;
+    border: 2px solid var(--Eucaplyptus, #44FFA1);
+}
+section.header .nav a:hover{
+    color: var(--Eucaplyptus, #44FFA1);
+}
+button{
+    margin-top: 1em;
+    width: 161px;
+    height: 61px;
+    flex-shrink: 0;
+    background: var(--Eucaplyptus, #44FFA1);
+    color: var(--Dark-Purple, #24053E);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+    border: none;
+}
+/* DESKTOP VIEW */
+/* HEADER */
+section.header{
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+    margin-bottom: 3em;
+}
+section.header .header-bg{
+    background-image: url('assets/images/bg.svg');
+    width: 100%;
+    height: 90vh;
+    padding: 2em;
+    position: relative;
+    margin-bottom: 13em;
+    overflow-y: visible;
+}
+section.header .nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+section.header .nav a{
+    color:#FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+    text-decoration: none;
+    border-bottom: 0.13em solid #44FFA1;
+}
+section.header svg{
+    height: 70%;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+section.header .hs-1{
+    left: 0;
+    transform: translateX(-20%);
+}
+section.header .hs-2{
+    right: 0;
+    top: 40%;
+    transform: translateX(80%);
+}
+section.header .hero{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+section.header .hero h1{
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Fraunces";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px; /* 100% */
+}
+section.header .hero span{
+    border-bottom: 0.03em solid #44FFA1;
+}
+section.header .hero button{
+    margin: 0 auto;
+    margin-top: 2em;
+}
+section.header img:last-child{
+    margin-top: 1.8em;
+    height: 20em;
+    width: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* MAIN */
+section.main{
+    width: 80vw;
+    margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   margin-bottom: 10em;
+}
+section.main .main-content{
+    margin: 2em;
+    box-sizing: border-box;
+}
+section.main .main-content .circle{
+    color: var(--Dark-Purple, #24053E);
+    font-family: "Fraunces";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-bottom: 1.2em;
+    border: 1px solid var(--Davys-Grey, #584D62);
+    border-radius: 50%;
+ 
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    line-height: 56px;
+    margin: 0 auto;
+}
+section.main .main-content h2{
+    color: var(--Dark-Purple, #24053E);
+    font-family: "Fraunces";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    margin: 1em 0em;
+}
+section.main .main-content p{
+    color: var(--Davys-Grey, #584D62);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+
+/* CONTAINER */
+section.container{
+    margin-top: 10em;
+    width: 80%;
+    margin:  0 auto;
+    position: relative;
+}
+section.container img{
+    width: 450.287px;
+    height: 453px;
+    flex-shrink: 0;
+}
+section.container .message{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 67%;
+    /* height: 413px; */
+    flex-shrink: 0;
+    background: var(--Dark-Purple, #24053E);
+    padding: 3em;
+
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+section.container .message h2{
+    font-family: "Fraunces";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 114.286% */
+}
+section.container .message p{
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    margin-top: 1.3em;
+    /* width: 6; */
+}
+section.container button{
+    margin-top: 1.8em;
+}
+section.container svg{
+    width: 173px;
+    height: 137px;
+    transform: scale(1.6);
+    flex-shrink: 0;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+/* FOOTER */
+section.footer{
+    width: 116px;
+    height: 102.224px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    margin-top: 10em;
+}
+section.footer .footer-icon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+section.footer .social-icon{
+    fill: #584D62;
+}
+section.footer .footer-icon .social-icon:hover{
+    cursor: pointer;
+    fill: #24053E;
+    /* background-color: red; */
+}
+
+/* TABLET VIEW */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+        position: relative;
+    }
+    section.header .header-bg{
+        height:80vh;
+    }
+    section.header h1{
+        font-size: 4.5em;
+        line-height: 60px;
+    }
+    section.header .hero{
+        width: 80%;
+        margin-top: 5em;
+    }
+    section.header .hs-1{
+        left: 0;
+        transform: translateX(-40%);
+    }
+    section.header .hs-2{
+        right: 0;
+        top: 40%;
+        transform: translateX(70%);
+    }
+    button{
+        width: 133px;
+        height: 55px;
+    }
+    section.header .hero button{
+        margin-top: 2em;
+
+    }
+    section.header img:last-child{
+        width: 30em;
+        height: 16em;
+        margin-top: 5em;
+    } 
+    section.main{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 0.04em;
+        width: 80%;
+
+    }
+    section.main .main-content{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    section.main .main-content .circle{
+        text-align: center;
+        margin-top: 2.2em;
+        margin-right: 1em;
+        width: 2.8em;
+        height: 2.8em;
+        flex-shrink: 0;
+        line-height: 2.8em;
+    }
+    section.main .main-content .main-info h2{
+        margin-top: 0;
+        font-size: 28px;
+        line-height: 36px; /* 128.571% */
+    }
+    section.main .main-content .main-info p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    section.container{
+        margin: 5em 0em;
+        width: 80%;
+        margin:  0 auto;
+        position: relative;
+    }
+    section.container img{
+        width: 265px;
+        height: 267px;
+        flex-shrink: 0;
+    }
+    section.container .message{
+        width: 70%;
+        flex-shrink: 0;
+        top: 50%;
+        padding: 2em;
+    }
+    section.container .message h2{
+        font-family: "Fraunces";
+        font-size: 48px;
+        line-height: 56px;
+    }
+    section.container .message p{
+        font-size: 1em;
+        line-height: 28px;
+        margin-top: 0.9em;
+        /* width: 22em; */
+    }
+    section.container button{
+        margin-top: 1em;
+        width: 172px;
+        height: 55px;
+        flex-shrink: 0;
+    }
+    section.container svg{
+        transform: scale(1.2);
+        flex-shrink: 0;
+        position: absolute;
+        top: 76%;
+        right: 3%;
+    }
+    section.footer{
+        margin-top: 17em;
+    }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 480px) {
+    section.header .header-bg{
+        width: 100%;
+        padding: 1.5em;
+        height: 70vh;
+        margin-bottom: 5em;
+    }
+    section.header .nav{
+        width: 100%;
+    }
+    section.header .nav a{
+        font-size: 1em;
+        letter-spacing: -0.16px;
+    }
+    section.header svg{
+        display: none;
+    }
+    section.header .hero{
+        width: 100%;
+        margin-top: 4em;
+
+    }
+    section.header .hero h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    section.header .hero button{
+        margin-top: 1em;
+    }
+    section.header img:last-child{
+        width: 292.881px;
+        height: 168.98px;
+        flex-shrink: 0;
+    }
+    section.main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* gap: 0.04em; */
+        width: 90%;
+    }
+    section.main .main-content{
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+    section.main .main-content .circle{
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        flex-shrink: 0;
+        line-height: 2em;
+        font-size: 20px;
+    }
+    section.main .main-content h2{
+        font-size: 28px;
+        margin: 0.6em 0em;
+    }
+    section.main .main-content p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    section.container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    section.container .pic{
+        width: 80%;
+        margin: 0 auto;
+    }
+    section.container img{
+        /* width: 80%; */
+        width: 265px;
+        height: 267px;
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
+    section.container .message{
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    section.container .message h2{
+        font-size: 32px;
+        line-height:48px;
+    }
+    section.container .message p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    section.container button{
+        width: 172px;
+        height: 55px;
+        letter-spacing: -0.16px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    section.container svg{
+        display: none;
+    }
+    section.footer{
+        margin-top: 28em;
+    }
+    section.footer .footer-icon{
+        margin-top: 3em;
+        gap: 1.5em;
+    }
+}
